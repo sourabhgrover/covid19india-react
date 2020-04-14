@@ -3205,6 +3205,15 @@ select {
       font-family: 'archia';
       color: $red;
     }
+
+    .delta {
+      fill: #dc3545;
+      font-weight: 900;
+    }
+
+    .percent {
+      fill: #dc354590;
+    }
   }
 }
 
