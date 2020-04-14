@@ -931,6 +931,10 @@ h6 {
         align-self: center;
       }
 
+      .result-name {
+        max-width: 18rem;
+      }
+
       .result-type {
         background: $yellow-light;
         color: $orange;
@@ -3253,16 +3257,15 @@ select {
       }
 
       h2 {
-        min-width: 2.75rem;
       }
 
       h5 {
-        line-height: 17px;
+        margin-top: 0.15rem;
         margin-left: 0.5rem;
       }
 
       & > * {
-        align-self: flex-end;
+        align-self: center;
       }
 
       .delta {
@@ -3270,7 +3273,7 @@ select {
         flex-direction: row;
         h6 {margin: 0; color: $red-mid;}
         margin-left: 0.5rem;
-        height: 1.05rem;
+        margin-top: 4px;
         svg {
           vertical-align: bottom;
           width: 10px;
@@ -3787,11 +3790,7 @@ select {
         }
       }
     }
-
-
   }
-
-
 
   .resourcefilters {
     display: flex;
@@ -3818,7 +3817,6 @@ select {
     animation-name: fadeInUp;
     animation-duration: 1s;
     animation-timing-function: ease-in;
-
   }
 
   .pagination{
@@ -3845,19 +3843,12 @@ select {
     }
   }
 
-}
-
-.iframe-container {
-  width: 100%;
-  min-height: 100vh;
-
-  iframe {
-    width: 100vw;
-    height: 100vh;
-    border: 0;
+  .Search {
+    .result-name {
+      max-width: 10rem !important;
+    }
   }
 }
-
 
 /* Animation Support */
 
