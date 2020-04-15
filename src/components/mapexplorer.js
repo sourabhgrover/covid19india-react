@@ -273,7 +273,8 @@ function MapExplorer({
           </div>
         )}
 
-        {currentMap.mapType === MAP_TYPES.STATE ? (
+        {currentMap.mapType === MAP_TYPES.STATE &&
+        currentHoveredRegion.name !== currentMap.name ? (
           <h1 className="district-confirmed">
             {currentMapData[currentHoveredRegion.name]
               ? currentMapData[currentHoveredRegion.name]
